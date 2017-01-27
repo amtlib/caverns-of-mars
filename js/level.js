@@ -7,6 +7,7 @@ class Level{
         let imageLevel = new Image();
         imageLevel.addEventListener('load', function(){
             context.drawImage(imageLevel, 0, imageLevel.level_position_y);
+            console.log('level render');
         })
         imageLevel.src = this.graphic_path;
         imageLevel.level_position_y = this.position_y;
