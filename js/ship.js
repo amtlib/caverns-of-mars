@@ -3,7 +3,7 @@ class Ship{
         this.positon_x = positon_x;
         this.position_y = position_y;
 
-        this.graphic_path = 'graphics/ship.png';
+        this.graphic_path = '../graphics/ship.png';
     }
 
 }
