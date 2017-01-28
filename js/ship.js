@@ -4,13 +4,14 @@ class Ship {
         this.position_y = position_y;
 
         this.graphic_path = 'graphics/ship.png';
+
     }
     go(direction){
         switch(direction){
-            case Direction.TOP: this.position_y--; break;
-            case Direction.RIGHT: this.position_x++; break;
-            case Direction.LEFT: this.position_x--; break;
-            case Direction.BOTTOM: this.position_y++; break;
+            case Direction.UP: this.position_y-=5; break;
+            case Direction.RIGHT: this.position_x+=5; break;
+            case Direction.LEFT: this.position_x-=5; break;
+            case Direction.DOWN: this.position_y+=5; break;
         }
     }
     render(context) {

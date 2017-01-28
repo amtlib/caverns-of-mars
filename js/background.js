@@ -1,10 +1,15 @@
 class Background{
-    constructor(color){
-        this.color = color;
+    constructor(){
+        this.graphic_path = 'graphics/background.png'
     }
     render(context){
-        context.fillStyle = this.color;
-        let canvas = document.getElementById('paper');
-        context.fillRect(0,0,canvas.width, canvas.height);
+
+        let imageBackground = new Image();
+        imageBackground.addEventListener('load', function(){
+            context.drawImage(imageBackground, 0, 0);
+            console.log('ship render');
+        });
+        imageBackground.src = this.graphic_path;
+
     }
 }

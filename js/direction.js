@@ -1,6 +1,6 @@
 var Direction = {
-    TOP: 'TOP',
+    UP: 'UP',
     RIGHT: 'RIGHT',
     LEFT: 'LEFT',
-    BOTTOM: 'BOTTOM',
+    DOWN: 'DOWN',
 }
